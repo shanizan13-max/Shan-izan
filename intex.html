@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shan Izan | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+    line-height:1.6;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+}
+
+.hero{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:white;
+    padding:50px 30px;
+    border-radius:20px;
+    display:flex;
+    align-items:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.profile-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+}
+
+.hero-text h1{
+    font-size:3rem;
+}
+
+.hero-text p{
+    opacity:0.9;
+    margin-top:10px;
+}
+
+.contact{
+    margin-top:15px;
+}
+
+.contact span{
+    display:block;
+}
+
+.section{
+    background:white;
+    margin-top:20px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.section h2{
+    color:#0f172a;
+    margin-bottom:15px;
+    border-left:5px solid #2563eb;
+    padding-left:10px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill{
+    background:#e0e7ff;
+    color:#1e40af;
+    padding:8px 14px;
+    border-radius:20px;
+    font-weight:600;
+}
+
+.interests{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    font-size:1.1rem;
+}
+
+.footer{
+    text-align:center;
+    margin-top:25px;
+    color:#666;
+    padding-bottom:20px;
+}
+
+.btn{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    margin-top:15px;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+@media(max-width:768px){
+    .hero{
+        text-align:center;
+        justify-content:center;
+    }
+
+    .hero-text h1{
+        font-size:2.2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="hero">
+
+        <!-- Replace photo.jpg with your image -->
+        <img src="photo.jpg" alt="Shan Izan" class="profile-img">
+
+        <div class="hero-text">
+            <h1>Shan Izan</h1>
+            <h3>Diploma Student | Electrical & Electronics Engineering</h3>
+
+            <div class="contact">
+                <span>📍 Edappal, Kerala, India</span>
+                <span>📞 7736073110</span>
+                <span>🏫 SSM Polytechnic College, Tirur</span>
+                <span>🎓 Second Year EEE Student</span>
+            </div>
+
+            <button class="btn" onclick="showMessage()">
+                View Career Objective
+            </button>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>About Me</h2>
+        <p>
+            Hello! I'm Shan Izan from Edappal, Kerala. I am currently pursuing
+            a Diploma in Electrical and Electronics Engineering (EEE) at
+            SSM Polytechnic College, Tirur. I am passionate about technology,
+            innovation, and continuous learning. My goal is to build a successful
+            career in engineering while constantly improving my technical and
+            personal skills.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <p><strong>Diploma in Electrical & Electronics Engineering (EEE)</strong></p>
+        <p>SSM Polytechnic College, Tirur</p>
+        <p>Currently in Second Year</p>
+        <br>
+        <p><strong>10th Standard</strong></p>
+        <p>Successfully Completed</p>
+    </div>
+
+    <div class="section">
+        <h2>Skills</h2>
+
+        <div class="skills">
+            <div class="skill">Electrical Basics</div>
+            <div class="skill">Electronics Basics</div>
+            <div class="skill">Problem Solving</div>
+            <div class="skill">Communication</div>
+            <div class="skill">Teamwork</div>
+            <div class="skill">Time Management</div>
+            <div class="skill">Quick Learner</div>
+            <div class="skill">Adaptability</div>
+        </div>
+
+    </div>
+
+    <div class="section">
+        <h2>Interests</h2>
+
+        <div class="interests">
+            <span>⚽ Football</span>
+            <span>🎵 Music</span>
+            <span>⚡ Electrical Technology</span>
+            <span>💡 Electronics</span>
+            <span>📚 Self Learning</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Strengths</h2>
+
+        <ul>
+            <li>Hardworking and Dedicated</li>
+            <li>Positive Attitude</li>
+            <li>Responsible and Reliable</li>
+            <li>Good Team Player</li>
+            <li>Willingness to Learn</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 Shan Izan | Electrical & Electronics Engineering Student</p>
+    </div>
+
+</div>
+
+<script>
+function showMessage(){
+    alert(
+        "Career Objective:\n\nTo become a skilled Electrical and Electronics professional by continuously improving my technical knowledge, gaining practical experience, and contributing to innovative engineering solutions."
+    );
+}
+</script>
+
+</body>
+</html>
